@@ -9,9 +9,9 @@ const MainPage = () => {
     const [fact, setFact] = useState('');
     const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        getFact()
-    }, [])
+    // useEffect(() => {
+    //     getFact()
+    // }, [])
 
 
     const getFact = () => {
