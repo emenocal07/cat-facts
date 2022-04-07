@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Title from '../components/Title/Title';
 import axios from 'axios';
 import { Button, Col, Row, Spin } from 'antd';
@@ -8,10 +8,6 @@ const MainPage = () => {
 
     const [fact, setFact] = useState('');
     const [loading, setLoading] = useState(true);
-
-    // useEffect(() => {
-    //     getFact()
-    // }, [])
 
 
     const getFact = () => {
