@@ -14,7 +14,7 @@ const MainPage = () => {
         setLoading(true);
         axios.get('https://catfact.ninja/fact?max_length=140')
             .then(response => {
-                setFact(response.data.text);
+                setFact(response.fact);
                 setLoading(false);
             })
             .catch(error => console.log(error))
