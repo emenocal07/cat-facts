@@ -12,7 +12,7 @@ const MainPage = () => {
 
     const getFact = () => {
         setLoading(true);
-        axios.get('https://cat-fact.herokuapp.com/facts/random')
+        axios.get('https://catfact.ninja/fact?max_length=140')
             .then(response => {
                 setFact(response.data.text);
                 setLoading(false);
